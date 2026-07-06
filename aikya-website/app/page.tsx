@@ -1,5 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
 import AboutPreview from "@/components/home/AboutPreview";
 import MissionPreview from "@/components/home/MissionPreview";
@@ -12,8 +10,7 @@ import ContactPreview from "@/components/home/ContactPreview";
 
 export default function HomePage() {
   return (
-    <>
-      <Navbar />
+    <main>
       <Hero />
       <AboutPreview />
       <MissionPreview />
@@ -23,7 +20,6 @@ export default function HomePage() {
       <NewsPreview />
       <DonatePreview />
       <ContactPreview />
-      <Footer />
-    </>
+    </main>
   );
 }

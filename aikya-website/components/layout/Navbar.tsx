@@ -1,10 +1,19 @@
 "use client";
 
+<<<<<<< HEAD
 import { useState } from "react";
+=======
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { navigationLinks } from "@/data/navigation";
+import MobileMenu from "./MobileMenu";
+>>>>>>> 715f454 (Upgradation)
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
+<<<<<<< HEAD
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -195,5 +204,59 @@ export default function Navbar() {
         }
       `}</style>
     </>
+=======
+  const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur-xl">
+      <nav className="container-custom flex items-center justify-between py-4">
+        <Link href="/" className="flex items-center gap-3">
+          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] text-sm font-black text-white">
+            A
+          </div>
+          <div>
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.35em] text-[var(--muted)]">AIKYA FOUNDATION</p>
+            <p className="text-sm text-[var(--muted)]">Empowering communities</p>
+          </div>
+        </Link>
+
+        <div className="hidden items-center gap-2 lg:flex">
+          {navigationLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`nav-link ${pathname === link.href ? "active" : ""}`}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <ThemeToggle />
+        </div>
+
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <MobileMenu open={isMenuOpen} onToggle={() => setIsMenuOpen((value) => !value)} />
+        </div>
+      </nav>
+
+      {isMenuOpen ? (
+        <div className="border-t border-[var(--border)] bg-[var(--background)]/95 lg:hidden">
+          <div className="container-custom flex flex-col gap-2 py-4">
+            {navigationLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`mobile-nav-link ${pathname === link.href ? "active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      ) : null}
+    </header>
+>>>>>>> 715f454 (Upgradation)
   );
 }

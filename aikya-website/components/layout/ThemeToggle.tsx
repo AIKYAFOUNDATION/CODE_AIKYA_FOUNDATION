@@ -1,5 +1,6 @@
 "use client";
 
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
 
 export default function ThemeToggle() {
@@ -102,6 +103,34 @@ export default function ThemeToggle() {
       onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       title={isDark ? "Light Mode" : "Dark Mode"}
+=======
+import { useEffect, useState } from "react";
+
+export default function ThemeToggle() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const storedTheme = window.localStorage.getItem("aikya-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const resolvedTheme = storedTheme ? storedTheme === "dark" : prefersDark;
+    setIsDark(resolvedTheme);
+    document.documentElement.classList.toggle("dark", resolvedTheme);
+    document.documentElement.style.colorScheme = resolvedTheme ? "dark" : "light";
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+    document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+    window.localStorage.setItem("aikya-theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
+  return (
+    <button
+      type="button"
+      aria-label="Toggle dark mode"
+      onClick={() => setIsDark((value) => !value)}
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-lg shadow-sm"
+>>>>>>> 715f454 (Upgradation)
     >
       {isDark ? "☀️" : "🌙"}
     </button>

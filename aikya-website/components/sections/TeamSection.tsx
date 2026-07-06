@@ -2,36 +2,19 @@ import { governingBody } from "@/data/team";
 
 export default function TeamSection() {
   return (
-    <section>
-      <h2>TEAM</h2>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "24px",
-        }}
-      >
-        {governingBody.map((member) => (
-          <div
-            key={member.name}
-            style={{
-              padding: "20px",
-              border: "1px solid rgba(0,0,0,0.1)",
-              borderRadius: "16px",
-            }}
-          >
-            <img
-              src={member.image}
-              alt={member.name}
-              width="220"
-            />
-
-            <h3>{member.name}</h3>
-
-            <p>{member.designation}</p>
-          </div>
-        ))}
+    <section className="section-padding">
+      <div className="container-custom">
+        <div className="pill">Meet the team</div>
+        <h2>TEAM</h2>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {governingBody.map((member) => (
+            <div key={member.name} className="surface-card text-center">
+              <img src={member.image} alt={member.name} className="mx-auto h-56 w-full rounded-2xl object-cover" />
+              <h3 className="mt-4">{member.name}</h3>
+              <p className="mt-2 text-[var(--muted)]">{member.designation}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

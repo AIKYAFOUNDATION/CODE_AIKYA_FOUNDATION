@@ -1,5 +1,6 @@
 "use client";
 
+<<<<<<< HEAD
 interface MobileMenuProps {
   isOpen: boolean;
   onToggle: () => void;
@@ -27,3 +28,30 @@ export default function MobileMenu({ isOpen, onToggle }: MobileMenuProps) {
     </button>
   );
 }
+=======
+type MobileMenuProps = {
+  open: boolean;
+  onToggle: () => void;
+};
+
+export default function MobileMenu({ open, onToggle }: MobileMenuProps) {
+  return (
+    <button
+      type="button"
+      aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+      onClick={onToggle}
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] shadow-sm"
+    >
+      <span className="flex flex-col gap-1.5">
+        <span
+          className={`block h-0.5 w-5 rounded-full bg-[var(--foreground)] transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+        />
+        <span className={`block h-0.5 w-5 rounded-full bg-[var(--foreground)] transition-opacity ${open ? "opacity-0" : "opacity-100"}`} />
+        <span
+          className={`block h-0.5 w-5 rounded-full bg-[var(--foreground)] transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+        />
+      </span>
+    </button>
+  );
+}
+>>>>>>> 715f454 (Upgradation)
