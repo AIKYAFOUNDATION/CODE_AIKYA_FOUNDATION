@@ -8,7 +8,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setIsMounted(true);
-    
+
     // Check localStorage and system preference
     const savedDarkMode = localStorage.getItem("darkMode");
     let darkMode = false;
@@ -38,27 +38,27 @@ export default function ThemeToggle() {
   const applyTheme = (dark: boolean) => {
     const html = document.documentElement;
     const body = document.body;
-    const nav = document.querySelector("nav");
+    const navs = document.querySelectorAll("nav");
 
     if (dark) {
       html.style.backgroundColor = "#1a1a1a";
       html.style.color = "#ffffff";
       body.style.backgroundColor = "#1a1a1a";
       body.style.color = "#ffffff";
-      if (nav) {
+      navs.forEach((nav) => {
         nav.style.backgroundColor = "#2a2a2a";
         nav.style.borderBottomColor = "rgba(255,255,255,0.1)";
-      }
+      });
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
       html.style.backgroundColor = "#ffffff";
       html.style.color = "#000000";
       body.style.backgroundColor = "#ffffff";
       body.style.color = "#000000";
-      if (nav) {
+      navs.forEach((nav) => {
         nav.style.backgroundColor = "#f5f5dc";
         nav.style.borderBottomColor = "rgba(0,0,0,0.08)";
-      }
+      });
       document.documentElement.setAttribute("data-theme", "light");
     }
   };
@@ -77,8 +77,8 @@ export default function ThemeToggle() {
           cursor: "pointer",
           border: "none",
           background: "transparent",
-          fontSize: "1.2rem",
-          padding: "5px",
+          fontSize: "1.4rem",
+          padding: "8px",
         }}
         disabled
       >
@@ -94,8 +94,8 @@ export default function ThemeToggle() {
         cursor: "pointer",
         border: "none",
         background: "transparent",
-        fontSize: "1.2rem",
-        padding: "5px",
+        fontSize: "1.4rem",
+        padding: "8px",
         transition: "transform 0.3s ease",
       }}
       onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
