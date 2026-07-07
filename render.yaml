@@ -3,8 +3,8 @@ services:
     name: aikya-foundation
     runtime: node
     rootDir: aikya-website
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: cd aikya-website && npm install && npm run build
+    startCommand: cd aikya-website && npm start
     envVars:
       - key: NODE_ENV
         value: production
