@@ -10,7 +10,7 @@ import ContactPreview from "@/components/home/ContactPreview";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="page-stack">
       <Hero />
       <AboutPreview />
       <MissionPreview />
