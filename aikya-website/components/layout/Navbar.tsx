@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -17,25 +17,27 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur-xl">
       <div className="container-custom flex flex-col gap-3 py-4">
-        <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/images/logo/IMGLOGO.png"
-              alt="AIKYA FOUNDATION logo"
-              className="h-12 w-12 rounded-full object-cover"
-            />
-          </Link>
+        <div className="flex items-center justify-between">
+          <div className="w-1/4 flex justify-start">
+  <Link href="/">
+    <Image
+      src="/images/logo/IMGLOGO.png"
+      alt="AIKYA FOUNDATION logo"
+      width={60}
+      height={60}
+      priority
+      className="object-contain"
+    />
+  </Link>
+</div>
 
-          <div className="flex-1 text-center">
-            <p className="text-lg font-black uppercase tracking-[0.34em] text-transparent bg-clip-text bg-gradient-to-r from-[#1b4332] via-[#606c38] to-[#bc8f8f]">
-              AIKYA FOUNDATION
-            </p>
-            <p className="text-xs font-medium uppercase tracking-[0.28em] text-[var(--muted)]">
-              Empowering communities
-            </p>
-          </div>
+          <div className="w-2/4 text-center">
+  <h1 className="text-gradient">
+  AIKYA FOUNDATION
+</h1>
+</div>
 
-          <div className="flex items-center justify-end">
+          <div className="w-1/4 flex justify-end">
             <ThemeToggle />
           </div>
         </div>
