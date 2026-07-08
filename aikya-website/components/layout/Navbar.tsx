@@ -16,8 +16,9 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur-xl">
-      <div className="container-custom flex flex-col gap-3 py-4">
-        <div className="flex items-center justify-between gap-2 md:gap-4">
+      <div className="container-custom flex flex-col gap-0 py-4">
+        {/* First Row: Logo, Title, Theme Toggle */}
+        <div className="flex items-center justify-between gap-2 md:gap-4 pb-4 border-b border-[var(--border)]">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
@@ -43,7 +44,9 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-2 lg:hidden">
+        {/* Second Row: Navigation Links */}
+        {/* Mobile Navigation: Home, About Us, and Hamburger */}
+        <div className="flex items-center justify-between gap-2 lg:hidden pt-4">
           <Link
             href={mobileVisibleLinks[0].href}
             className={`nav-link ${pathname === mobileVisibleLinks[0].href ? "active" : ""}`}
@@ -58,10 +61,13 @@ export default function Navbar() {
             {mobileVisibleLinks[1].name}
           </Link>
 
-          <MobileMenu open={isMenuOpen} onToggle={() => setIsMenuOpen((value) => !value)} />
+          <div className="ml-auto">
+            <MobileMenu open={isMenuOpen} onToggle={() => setIsMenuOpen((value) => !value)} />
+          </div>
         </div>
 
-        <nav className="hidden items-center justify-center gap-2 lg:flex">
+        {/* Desktop Navigation: All links side by side */}
+        <nav className="hidden items-center justify-center gap-2 lg:flex pt-4">
           {navigationLinks.map((link) => (
             <Link
               key={link.href}
@@ -73,9 +79,10 @@ export default function Navbar() {
           ))}
         </nav>
 
+        {/* Mobile Menu Dropdown: Additional sections */}
         {isMenuOpen ? (
-          <div className="border-t border-[var(--border)] bg-[var(--background)]/95 lg:hidden">
-            <div className="container-custom flex flex-col gap-2 py-4">
+          <div className="border-t border-[var(--border)] bg-[var(--background)]/95 lg:hidden mt-4 pt-4">
+            <div className="flex flex-col gap-2">
               {mobileMenuLinks.map((link) => (
                 <Link
                   key={link.href}
