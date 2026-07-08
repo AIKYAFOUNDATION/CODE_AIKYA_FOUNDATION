@@ -191,10 +191,42 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.navbar-title {
+  font-size: clamp(0.875rem, 2.5vw, 1.5rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  background: linear-gradient(to right, #1b4332, #606c38, #bc8f8f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+html.dark .navbar-title {
+  background: linear-gradient(to right, #606c38, #ffd9e8, #ffe4e1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: clamp(0.75rem, 2vw, 1.1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+}
+
 #THEME-SWITCH{
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,7 +237,7 @@ img {
     border-radius: 0;
     background: transparent;
     box-shadow: none;
-    z-index: 9999;
+    flex-shrink: 0;
 }
 
 #THEME-SWITCH:hover {
@@ -216,13 +248,8 @@ img {
     fill: var(--foreground);
 }
 
-/* Mobile responsive adjustments */
+/* Mobile responsive adjustments for theme toggle */
 @media (max-width: 768px) {
-    #THEME-SWITCH {
-        top: 16px;
-        right: 16px;
-    }
-    
     #THEME-SWITCH svg {
         width: 22px;
         height: 22px;
@@ -230,11 +257,6 @@ img {
 }
 
 @media (max-width: 480px) {
-    #THEME-SWITCH {
-        top: 14px;
-        right: 14px;
-    }
-    
     #THEME-SWITCH svg {
         width: 20px;
         height: 20px;
