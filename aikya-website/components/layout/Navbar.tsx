@@ -17,27 +17,28 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur-xl">
       <div className="container-custom flex flex-col gap-3 py-4">
-        <div className="flex items-center justify-between">
-          <div className="w-1/4 flex justify-start">
-  <Link href="/">
-    <Image
-      src="/images/logo/IMGLOGO.png"
-      alt="AIKYA FOUNDATION logo"
-      width={60}
-      height={60}
-      priority
-      className="object-contain"
-    />
-  </Link>
-</div>
+        <div className="flex items-center justify-between gap-2 md:gap-4">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/">
+              <Image
+                src="/images/logo/IMGLOGO.png"
+                alt="AIKYA FOUNDATION logo"
+                width={60}
+                height={60}
+                priority
+                className="object-contain"
+              />
+            </Link>
+          </div>
 
-          <div className="w-2/4 text-center">
-  <h1 className="text-gradient">
-  AIKYA FOUNDATION
-</h1>
-</div>
+          {/* Title */}
+          <div className="navbar-title flex-1">
+            AIKYA FOUNDATION
+          </div>
 
-          <div className="w-1/4 flex justify-end">
+          {/* Theme Toggle */}
+          <div className="flex-shrink-0">
             <ThemeToggle />
           </div>
         </div>
