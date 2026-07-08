@@ -207,10 +207,36 @@ img {
     box-shadow: none;
     z-index: 9999;
 }
-#THEME-SWITCH:hover
-{
-transform:scale(1.1);
+
+#THEME-SWITCH:hover {
+    transform: scale(1.1);
 }
-#THEME-SWITCH svg{
+
+#THEME-SWITCH svg {
     fill: var(--foreground);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    #THEME-SWITCH {
+        top: 16px;
+        right: 16px;
+    }
+    
+    #THEME-SWITCH svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    #THEME-SWITCH {
+        top: 14px;
+        right: 14px;
+    }
+    
+    #THEME-SWITCH svg {
+        width: 20px;
+        height: 20px;
+    }
 }
