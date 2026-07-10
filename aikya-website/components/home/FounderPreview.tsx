@@ -9,7 +9,7 @@ export default function FounderPreview() {
           <img src="/images/founder/IMGDG.jpeg" alt="Founder of AIKYA FOUNDATION" className="h-64 w-full rounded-[1.5rem] object-cover" />
         </div>
         <div className="surface-card">
-          <div className="pill">Founder’s voice</div>
+          <div className="pill">Voice of the Founder</div>
           <h2>Founder's Message</h2>
           <p className="text-[var(--muted)]">{foundationData.founderMessage.slice(0, 420)}...</p>
           <Link href="/founder" className="cta-button cta-button-primary mt-6 inline-flex">
