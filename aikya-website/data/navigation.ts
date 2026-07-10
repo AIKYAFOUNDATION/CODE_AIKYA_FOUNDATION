@@ -24,10 +24,6 @@ export const navigationLinks = [
     href: "/gallery",
   },
   {
-    name: "News & Updates",
-    href: "/news",
-  },
-  {
     name: "Donate",
     href: "/donate",
   },
