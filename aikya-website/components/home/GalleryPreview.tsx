@@ -23,7 +23,7 @@ export default function GalleryPreview() {
                   src={`/images/gallery/${item.image}`}
                   alt={item.caption}
                   fill
-                  className="object-contain"
+                  className="gallery-image"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
