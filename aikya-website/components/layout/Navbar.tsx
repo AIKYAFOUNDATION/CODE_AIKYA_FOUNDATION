@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* Desktop Organization Name */}
           <div className="flex-1 text-center">
-            <h2 className="text-gradient font-black uppercase tracking-[0.25em] m-0">
+            <h2 className="text-gradient font-black uppercase tracking-[0.25em] m-0 org-name-desktop">
               AIKYA FOUNDATION
             </h2>
           </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
             {/* Mobile Organization Name - First Part */}
             <div className="flex-1 text-center">
-              <h2 className="text-gradient font-black uppercase tracking-[0.15em] m-0 text-lg">
+              <h2 className="text-gradient font-black uppercase tracking-[0.15em] m-0 text-lg org-name-mobile">
                 AIKYA
               </h2>
             </div>
@@ -84,7 +84,7 @@ export default function Navbar() {
 
           {/* Mobile Second Line: FOUNDATION centered */}
           <div className="text-center pb-4">
-            <h2 className="text-gradient font-black uppercase tracking-[0.15em] m-0 text-lg">
+            <h2 className="text-gradient font-black uppercase tracking-[0.15em] m-0 text-lg org-name-mobile">
               FOUNDATION
             </h2>
           </div>
