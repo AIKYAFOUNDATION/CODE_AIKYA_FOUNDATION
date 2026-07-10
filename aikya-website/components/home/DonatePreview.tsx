@@ -7,25 +7,25 @@ export default function DonatePreview() {
       <div className="container-custom surface-card">
         <div className="grid gap-8 lg:grid-cols-2 items-center">
           {/* Left Column - Content */}
-          <div>
+          <div className="overflow-hidden">
             <div className="pill">Support us</div>
-            <h2>Make a Difference Today</h2>
-            <p className="text-[var(--muted)] mb-6">
+            <h2 className="break-words">Make a Difference Today</h2>
+            <p className="text-[var(--muted)] mb-6 break-words">
               Your contribution directly fuels our initiatives in education, health, women empowerment, and youth leadership. Every donation brings us closer to creating lasting community transformation.
             </p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-center gap-3">
-                <span className="text-[var(--accent)] text-lg">✓</span>
-                <span className="text-[var(--foreground)]">100% transparent & accountable</span>
+                <span className="text-[var(--accent)] text-lg flex-shrink-0">✓</span>
+                <span className="text-[var(--foreground)] break-words">100% transparent & accountable</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-[var(--accent)] text-lg">✓</span>
-                <span className="text-[var(--foreground)]">Secure & verified transactions</span>
+                <span className="text-[var(--accent)] text-lg flex-shrink-0">✓</span>
+                <span className="text-[var(--foreground)] break-words">Secure & verified transactions</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-[var(--accent)] text-lg">✓</span>
-                <span className="text-[var(--foreground)]">Direct impact on communities</span>
+                <span className="text-[var(--accent)] text-lg flex-shrink-0">✓</span>
+                <span className="text-[var(--foreground)] break-words">Direct impact on communities</span>
               </div>
             </div>
 
@@ -35,7 +35,7 @@ export default function DonatePreview() {
           </div>
 
           {/* Right Column - QR Code Preview */}
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 overflow-hidden">
             <div className="surface-card p-6 bg-white rounded-lg border-2 border-[var(--accent-light)] max-w-full">
               <div className="relative bg-gray-100 rounded-lg overflow-hidden" style={{ width: "100%", maxWidth: "16rem", aspectRatio: "1" }}>
                 <Image
@@ -47,7 +47,7 @@ export default function DonatePreview() {
                 />
               </div>
             </div>
-            <p className="text-center text-sm text-[var(--muted)]">
+            <p className="text-center text-sm text-[var(--muted)] break-words max-w-full">
               Scan the QR code to donate instantly
             </p>
           </div>
