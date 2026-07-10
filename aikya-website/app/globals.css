@@ -322,3 +322,40 @@ img {
     margin-inline: auto;
   }
 }
+
+/* Homepage — reduce vertical spacing between adjacent sections (desktop + mobile) */
+.home-page.page-stack > section {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+@media (max-width: 768px) {
+  .home-page.page-stack > section {
+    padding-block: clamp(1.25rem, 4vw, 2rem);
+  }
+
+  .home-page.page-stack > section + section {
+    margin-top: 0.25rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .home-page.page-stack > section + section {
+    margin-top: 0.25rem;
+  }
+}
+
+/* Smaller pill and CTA for previews */
+.pill--small {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cta-small {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 999px;
+}

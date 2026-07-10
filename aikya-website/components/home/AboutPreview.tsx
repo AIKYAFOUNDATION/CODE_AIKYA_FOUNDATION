@@ -6,10 +6,10 @@ export default function AboutPreview() {
     <section className="section-padding">
       <div className="container-custom grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:auto-rows-fr">
         <div className="surface-card h-full flex flex-col">
-          <div className="pill">Who we are</div>
+          <div className="pill pill--small">Who we are</div>
           <h2>About Us</h2>
           <p className="text-[var(--muted)] flex-grow">{foundationData.about.slice(0, 420)}...</p>
-          <Link href="/about" className="cta-button cta-button-primary mt-6 inline-flex">
+          <Link href="/about" className="cta-button cta-button-primary mt-6 inline-flex cta-small">
             Read more
           </Link>
         </div>
