@@ -134,6 +134,7 @@ img {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  width: fit-content;
 }
 .cta-button {
   display: inline-flex;
@@ -352,6 +353,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  width: fit-content;
 }
 
 .cta-small {
