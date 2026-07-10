@@ -12,7 +12,7 @@ export default function MobileMenu({ open, onToggle }: MobileMenuProps) {
       aria-label={open ? "Close navigation menu" : "Open navigation menu"}
       aria-expanded={open}
       onClick={onToggle}
-      className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] shadow-sm transition-colors duration-200"
+      className="flex items-center justify-center bg-transparent border-0 shadow-none rounded-none p-0 cursor-pointer transition-transform duration-200 focus:outline-none focus:ring-0"
     >
       {open ? (
         <svg
@@ -21,7 +21,7 @@ export default function MobileMenu({ open, onToggle }: MobileMenuProps) {
           width="24"
           height="24"
           aria-hidden="true"
-          className="fill-current text-[var(--foreground)]"
+          className="fill-[var(--foreground)]"
         >
           <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
         </svg>
@@ -32,7 +32,7 @@ export default function MobileMenu({ open, onToggle }: MobileMenuProps) {
           width="24"
           height="24"
           aria-hidden="true"
-          className="fill-current text-[var(--foreground)]"
+          className="fill-[var(--foreground)]"
         >
           <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
         </svg>
