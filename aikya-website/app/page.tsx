@@ -4,7 +4,6 @@ import MissionPreview from "@/components/home/MissionPreview";
 import WhatWeDoPreview from "@/components/home/WhatWeDoPreview";
 import FounderPreview from "@/components/home/FounderPreview";
 import TeamPreview from "@/components/home/TeamPreview";
-import NewsPreview from "@/components/home/NewsPreview";
 import DonatePreview from "@/components/home/DonatePreview";
 import ContactPreview from "@/components/home/ContactPreview";
 
@@ -17,7 +16,6 @@ export default function HomePage() {
       <WhatWeDoPreview />
       <FounderPreview />
       <TeamPreview />
-      <NewsPreview />
       <DonatePreview />
       <ContactPreview />
     </main>
