@@ -80,7 +80,9 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center justify-center gap-2 py-4 border-t border-[var(--border)]">
+
+        <nav className="hidden lg:flex items-center justify-center gap-6 py-4 border-t border-[var(--border)] whitespace-nowrap">
+
           {navigationLinks.map((link) => (
             <Link
               key={link.href}

@@ -25,18 +25,19 @@ export default function ThemeToggle() {
   }, []);
 
   const handleToggle = () => {
-    const nextDark = !isDark;
+  
 
-    setIsDark(nextDark);
+  const nextDark = !isDark;
+  setIsDark(nextDark);
 
-    document.documentElement.classList.toggle("dark", nextDark);
-    document.documentElement.style.colorScheme = nextDark ? "dark" : "light";
+  document.documentElement.classList.toggle("dark", nextDark);
+  document.documentElement.style.colorScheme = nextDark ? "dark" : "light";
 
-    window.localStorage.setItem(
-      "aikya-theme",
-      nextDark ? "dark" : "light"
-    );
-  };
+  window.localStorage.setItem(
+    "aikya-theme",
+    nextDark ? "dark" : "light"
+  );
+};
 
   if (!mounted) {
     return (

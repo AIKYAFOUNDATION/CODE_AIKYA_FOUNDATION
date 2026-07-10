@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div className="hero-card">
           <img
-            src="/images/logo/IMGLOGO.jpeg"
+            src="/images/logo/IMGLOGO.png"
             alt="AIKYA FOUNDATION logo"
             className="mx-auto h-56 w-56 rounded-full object-contain shadow-lg"
           />
