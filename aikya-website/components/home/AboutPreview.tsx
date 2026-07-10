@@ -9,7 +9,7 @@ export default function AboutPreview() {
           <div className="pill pill--small w-fit">Who we are</div>
           <h2>About Us</h2>
           <p className="text-[var(--muted)] flex-grow">{foundationData.about.slice(0, 420)}...</p>
-          <Link href="/about" className="cta-button cta-button-primary mt-6 inline-flex cta-small">
+          <Link href="/about" className="cta-button cta-button-primary mt-6 inline-flex cta-small w-fit">
             Read more
           </Link>
         </div>
