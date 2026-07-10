@@ -3,7 +3,7 @@ import { governingBody } from "@/data/team";
 export default function TeamSection() {
   return (
     <section className="section-padding">
-      <div className="container-custom">
+      <div className="container-custom surface-card">
         <div className="pill">Meet the team</div>
         <h2>TEAM</h2>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
