@@ -18,7 +18,7 @@ export default function DonatePage() {
               <div className="space-y-4 mb-8">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-white text-sm font-bold">
+                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-[var(--background)] text-sm font-bold">
                       1
                     </div>
                   </div>
@@ -30,7 +30,7 @@ export default function DonatePage() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-white text-sm font-bold">
+                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-[var(--background)] text-sm font-bold">
                       2
                     </div>
                   </div>
@@ -42,7 +42,7 @@ export default function DonatePage() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-white text-sm font-bold">
+                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-[var(--background)] text-sm font-bold">
                       3
                     </div>
                   </div>
@@ -54,7 +54,7 @@ export default function DonatePage() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-white text-sm font-bold">
+                    <div className="flex items-center justify-center h-8 w-8 rounded-full bg-[var(--accent)] text-[var(--background)] text-sm font-bold">
                       4
                     </div>
                   </div>

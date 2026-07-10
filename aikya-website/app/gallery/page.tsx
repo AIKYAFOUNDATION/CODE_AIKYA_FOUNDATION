@@ -37,11 +37,7 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          <div className="mt-6">
-            <Link href="/gallery" className="cta-button cta-button-primary inline-flex">
-              See More
-            </Link>
-          </div>
+          
         </div>
       </section>
     </main>

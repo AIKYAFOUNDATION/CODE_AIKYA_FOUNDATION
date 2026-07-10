@@ -34,7 +34,7 @@ export default function DonatePreview() {
             </Link>
           </div>
 
-          {/* Right Column - QR Code Preview */}
+          {/* Right Column - QR Code Preview */}  
           <div className="flex flex-col items-center gap-4 overflow-hidden">
             <div className="surface-card p-6 bg-white rounded-lg border-2 border-[var(--accent-light)] max-w-full">
               <div className="relative bg-gray-100 rounded-lg overflow-hidden" style={{ width: "100%", maxWidth: "16rem", aspectRatio: "1" }}>

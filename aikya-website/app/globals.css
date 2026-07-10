@@ -17,7 +17,7 @@
   --primary: var(--dark-green);
   --primary-hover: #0d5a45;
   --secondary: var(--moss-green);
-  --accent: var(--sakura);
+  --accent: var(--foreground);
   --border: rgba(0, 0, 0, 0.08);
   --muted: rgba(17, 58, 48, 0.72);
   --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -40,7 +40,7 @@ html.dark {
   --primary: var(--moss-green);
   --primary-hover: #82b08b;
   --secondary: var(--sakura);
-  --accent: var(--misty-rose);
+  --accent: var(--foreground);
   --border: rgba(255, 255, 255, 0.08);
   --muted: rgba(255, 255, 255, 0.72);
   --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
