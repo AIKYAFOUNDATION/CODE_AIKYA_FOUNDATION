@@ -4,7 +4,7 @@ export default function WhatWeDoPreview() {
   return (
     <section className="section-padding">
       <div className="container-custom surface-card h-full flex flex-col">
-        <div className="pill">Impact areas</div>
+        <div className="pill pill--small">Impact areas</div>
         <h2>What We Do?</h2>
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4 flex-grow">
           {[
@@ -19,7 +19,7 @@ export default function WhatWeDoPreview() {
             </div>
           ))}
         </div>
-        <Link href="/what-we-do" className="cta-button cta-button-secondary mt-6 inline-flex">
+        <Link href="/what-we-do" className="cta-button cta-button-secondary mt-6 inline-flex cta-small">
           Explore initiatives
         </Link>
       </div>
