@@ -367,3 +367,17 @@ img {
     width: 100% !important;
   }
 }
+
+/* Mobile — Gallery images fill the entire card without gaps */
+@media (max-width: 768px) {
+  .gallery-image {
+    object-fit: cover;
+  }
+}
+
+/* Desktop — Gallery images contain with proper aspect ratio */
+@media (min-width: 769px) {
+  .gallery-image {
+    object-fit: contain;
+  }
+}
