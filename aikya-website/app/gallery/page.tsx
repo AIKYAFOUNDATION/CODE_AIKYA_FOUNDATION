@@ -1,23 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
 import { galleryData } from "@/data/gallery";
 
 export default function GalleryPage() {
   return (
     <main className="page-stack">
-      {/* Page Header */}
-      <section className="section-padding bg-gradient-to-b from-[var(--accent-light)] to-transparent">
-        <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)]">Gallery</h1>
-          <p className="mt-4 max-w-2xl text-lg text-[var(--muted)]">
-            Explore the moments that define our mission. From community engagement to transformative initiatives, every photograph captures the essence of AIKYA's work.
-          </p>
-        </div>
-      </section>
-
-      {/* Gallery Grid */}
+      {/* Gallery Section - combined into a single parent card */}
       <section className="section-padding">
         <div className="container-custom surface-card">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="pill">Our Moments</div>
+          <h2>Gallery</h2>
+          <p className="mt-2 max-w-3xl text-[var(--muted)]">
+            Explore the moments that define our mission. From community engagement to transformative initiatives, every photograph captures the essence of AIKYA's work.
+          </p>
+
+          {/* Gallery Grid - reduced gap between heading and images */}
+          <div className="mt-4 grid gap-6 md:grid-cols-2">
             {galleryData.map((item) => (
               <div key={item.id} className="surface-card overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <div className="relative h-80 md:h-96 w-full bg-gray-200">
@@ -37,6 +35,12 @@ export default function GalleryPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-6">
+            <Link href="/gallery" className="cta-button cta-button-primary inline-flex">
+              See More
+            </Link>
           </div>
         </div>
       </section>
