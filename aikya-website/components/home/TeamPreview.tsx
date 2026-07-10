@@ -10,7 +10,7 @@ export default function TeamPreview() {
         <div className="grid gap-4 md:grid-cols-3">
           {governingBody.slice(0, 3).map((member) => (
             <div key={member.name} className="surface-card text-center">
-              <img src={member.image} alt={member.name} className="mx-auto h-40 w-full rounded-2xl object-cover" />
+              <img src={member.image} alt={member.name} className="mx-auto h-40 w-full rounded-2xl md:object-contain object-cover" />
               <h3 className="mt-4">{member.name}</h3>
               <p className="mt-2 text-sm text-[var(--muted)]">{member.designation}</p>
             </div>
