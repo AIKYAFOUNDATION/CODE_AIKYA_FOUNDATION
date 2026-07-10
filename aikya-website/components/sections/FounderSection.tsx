@@ -8,13 +8,13 @@ export default function FounderSection() {
           <img
             src="/images/founder/IMGDG.jpeg"
             alt="Debashrita Guha"
-            className="mx-auto h-72 w-72 rounded-[2rem] object-cover shadow-lg"
+            className="mx-auto h-72 w-72 rounded-[2rem] lg:object-contain object-cover shadow-lg"
           />
           <h3 className="mt-6">Debashrita Guha</h3>
           <p className="mt-2 text-[var(--muted)]">Founder and President</p>
         </div>
         <div className="surface-card">
-          <div className="pill">Founder’s message</div>
+          <div className="pill">Founder's message</div>
           <h2>FOUNDER'S MESSAGE</h2>
           <p className="text-[var(--muted)]">{foundationData.founderMessage}</p>
         </div>
