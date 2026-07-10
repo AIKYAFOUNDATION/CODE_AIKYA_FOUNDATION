@@ -284,10 +284,10 @@ img {
 @media (min-width: 1024px) {
   .org-name-desktop {
     white-space: nowrap;               /* never wraps */
-    font-weight: 900;                  /* bold display */
-    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: clamp(1.1rem, 1.8vw, 1.6rem);
-    letter-spacing: 0.14em;
+    font-weight: 950;                  /* ultra-bold for more visual impact */
+    font-family: "Georgia", "Times New Roman", serif;  /* elegant serif font */
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);  /* increased from 1.1rem-1.6rem */
+    letter-spacing: 0.18em;            /* increased spacing */
     line-height: 1;
     margin: 0;
     text-transform: uppercase;
@@ -305,11 +305,11 @@ img {
 /* Organization name — mobile: stacked parts (AIKYA / FOUNDATION) with polished style */
 @media (max-width: 1023px) {
   .org-name-mobile {
-    font-weight: 800;
-    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: clamp(0.95rem, 2.4vw, 1.15rem);
-    letter-spacing: 0.12em;
-    line-height: 1.05;
+    font-weight: 950;                  /* ultra-bold for more visual impact */
+    font-family: "Georgia", "Times New Roman", serif;  /* elegant serif font */
+    font-size: clamp(1.15rem, 3.5vw, 1.6rem);  /* increased from 0.95rem-1.15rem */
+    letter-spacing: 0.16em;            /* increased spacing */
+    line-height: 1;
     margin: 0;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
