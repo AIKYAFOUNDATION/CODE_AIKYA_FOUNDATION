@@ -359,3 +359,11 @@ img {
   font-size: 0.9rem;
   border-radius: 999px;
 }
+
+/* Desktop-only: make section paragraphs use full container width for specific sections */
+@media (min-width: 1024px) {
+  .section-paragraph-fullwidth p {
+    max-width: none !important;
+    width: 100% !important;
+  }
+}
