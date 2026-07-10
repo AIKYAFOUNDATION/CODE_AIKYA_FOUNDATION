@@ -6,7 +6,7 @@ export default function FounderPreview() {
     <section className="section-padding">
       <div className="container-custom grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="hero-card">
-          <img src="/images/founder/IMGDG.jpeg" alt="Founder of AIKYA FOUNDATION" className="h-64 w-full rounded-[1.5rem] object-cover" />
+          <img src="/images/founder/IMGDG.jpeg" alt="Founder of AIKYA FOUNDATION" className="h-64 w-full rounded-[1.5rem] lg:object-contain object-cover" />
         </div>
         <div className="surface-card">
           <div className="pill">Voice of the Founder</div>
