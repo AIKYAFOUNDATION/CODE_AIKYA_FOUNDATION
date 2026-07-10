@@ -4,7 +4,7 @@ import { governingBody } from "@/data/team";
 export default function TeamPreview() {
   return (
     <section className="section-padding">
-      <div className="container-custom">
+      <div className="container-custom surface-card">
         <div className="pill">Our people</div>
         <h2>Team</h2>
         <div className="grid gap-4 md:grid-cols-3">
