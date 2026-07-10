@@ -20,9 +20,11 @@ export default function Navbar() {
       <div className="w-full flex flex-col gap-0 px-4">
 
         {/* ---------- First Row ---------- */}
-        <div className="flex items-center justify-between py-4">
-
-          {/* Logo */}
+        {/* Desktop: Full organization name on one line */}
+        {/* Mobile: Split into AIKYA and FOUNDATION on separate lines */}
+        
+        <div className="hidden lg:flex items-center justify-between py-4">
+          {/* Desktop Logo */}
           <div className="w-16 flex justify-start">
             <Link href="/">
               <Image
@@ -36,18 +38,56 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Organization Name */}
+          {/* Desktop Organization Name */}
           <div className="flex-1 text-center">
             <h2 className="text-gradient font-black uppercase tracking-[0.25em] m-0">
               AIKYA FOUNDATION
             </h2>
           </div>
 
-          {/* Theme Toggle */}
+          {/* Desktop Theme Toggle */}
           <div className="w-16 flex justify-end">
             <ThemeToggle />
           </div>
+        </div>
 
+        {/* Mobile Layout */}
+        <div className="lg:hidden flex flex-col gap-0">
+          {/* Mobile First Line: Logo | AIKYA | Theme Toggle */}
+          <div className="flex items-center justify-between py-4">
+            {/* Mobile Logo */}
+            <div className="flex-shrink-0">
+              <Link href="/">
+                <Image
+                  src="/images/logo/IMGLOGO.png"
+                  alt="AIKYA FOUNDATION logo"
+                  width={48}
+                  height={48}
+                  priority
+                  className="object-contain"
+                />
+              </Link>
+            </div>
+
+            {/* Mobile Organization Name - First Part */}
+            <div className="flex-1 text-center">
+              <h2 className="text-gradient font-black uppercase tracking-[0.15em] m-0 text-lg">
+                AIKYA
+              </h2>
+            </div>
+
+            {/* Mobile Theme Toggle */}
+            <div className="flex-shrink-0">
+              <ThemeToggle />
+            </div>
+          </div>
+
+          {/* Mobile Second Line: FOUNDATION centered */}
+          <div className="text-center pb-4">
+            <h2 className="text-gradient font-black uppercase tracking-[0.15em] m-0 text-lg">
+              FOUNDATION
+            </h2>
+          </div>
         </div>
 
         {/* ---------- Second Row ---------- */}
