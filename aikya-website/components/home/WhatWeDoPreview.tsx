@@ -13,9 +13,9 @@ export default function WhatWeDoPreview() {
             { title: "Community Well-being", text: "Supporting health, dignity, and resilience." },
             { title: "Youth Leadership", text: "Creating platforms for civic participation." },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-4">
+            <div key={item.title} className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 min-h-28 flex flex-col">
               <h3>{item.title}</h3>
-              <p className="mt-2 text-sm text-[var(--muted)]">{item.text}</p>
+              <p className="mt-2 text-sm text-[var(--muted)] break-words">{item.text}</p>
             </div>
           ))}
         </div>
