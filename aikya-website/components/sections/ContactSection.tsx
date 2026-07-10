@@ -19,7 +19,7 @@ export default function ContactSection() {
 </svg>
 
             <p className="font-semibold mt-3">Instagram</p>
-            <p className="mt-2 text-[var(--muted)]">Rise With AIKYA</p>
+            <p className="mt-2 text-[var(--muted)]">risewithaikya</p>
           </a>
           <a href="https://www.linkedin.com/company/aikya-foundation/" target="_blank" rel="noreferrer" className="surface-card block hover:-translate-y-1 transition-transform">
             

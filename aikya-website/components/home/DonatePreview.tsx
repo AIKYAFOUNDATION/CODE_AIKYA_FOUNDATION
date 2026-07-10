@@ -37,15 +37,19 @@ export default function DonatePreview() {
           {/* Right Column - QR Code Preview */}  
           <div className="flex flex-col items-center gap-4 overflow-hidden">
             <div className="surface-card p-6 bg-white rounded-lg border-2 border-[var(--accent-light)] max-w-full">
-              <div className="relative bg-gray-100 rounded-lg overflow-hidden" style={{ width: "100%", maxWidth: "16rem", aspectRatio: "1" }}>
-                <Image
-                  src="/images/donate/DONATEQRCODE.jpeg"
-                  alt="Donation QR Code"
-                  fill
-                  className="object-contain p-3"
-                  priority
-                />
-              </div>
+
+              
+
+<div className="relative h-80 w-80 bg-gray-100 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/donate/DONATEQRCODE.jpeg"
+                    alt="Donation QR Code"
+                    fill
+                    className="object-contain p-4"
+                    priority
+                  />
+                </div>
+
             </div>
             <p className="text-center text-sm text-[var(--muted)] break-words max-w-full">
               Scan the QR code to donate instantly
