@@ -3,16 +3,6 @@ import Image from "next/image";
 export default function DonatePage() {
   return (
     <main className="page-stack">
-      {/* Page Header */}
-      <section className="section-padding bg-gradient-to-b from-[var(--accent-light)] to-transparent">
-        <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)]">Support Our Mission</h1>
-          <p className="mt-4 max-w-2xl text-lg text-[var(--muted)]">
-            Your generous contribution directly fuels our initiatives in education, health, women empowerment, and youth leadership. Every donation brings us closer to creating lasting community transformation.
-          </p>
-        </div>
-      </section>
-
       {/* Donate Section */}
       <section className="section-padding">
         <div className="container-custom surface-card">
