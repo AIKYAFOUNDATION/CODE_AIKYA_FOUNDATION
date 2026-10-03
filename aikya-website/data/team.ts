@@ -21,12 +21,7 @@ export const governingBody = [
   },
   {
     name: "Vishal Sharma",
-    designation: "Social Media Lead",
+    designation: "Executive Member",
     image: "/images/team/IMGVS.jpg",
-  },
-  {
-    name: "Amit Basak",
-    designation: "Head of Communications and Outreach",
-    image: "/images/team/IMGAB.JPG",
   },
 ];
