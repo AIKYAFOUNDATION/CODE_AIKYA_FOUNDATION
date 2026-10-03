@@ -4,6 +4,8 @@ export const foundationData = {
   tagline: "Empowering Communities. Creating Impact.",
   about: `AIKYA (Advocating Integrity, Knowledge & Youth Autonomy) is a youth-led civic development foundation based in Siliguri, West Bengal, established with the belief that meaningful social transformation begins when individuals are equipped with the knowledge, awareness, and agency to shape their own futures.
 
+AIKYA Foundation is registered under the West Bengal Societies Registration Act 1961. Its Registration Number is S0063938 of 2026-2027.
+
 At its core, AIKYA exists to bridge the gap between potential and opportunity. Across many communities, particularly among students from government institutions, tribal regions, tea-garden communities, and economically disadvantaged backgrounds, talent and ambition often remain constrained by limited access to resources, exposure, mentorship, and institutional awareness. AIKYA seeks to address these challenges through structured interventions that empower individuals rather than create dependency.
 
 Guided by its four tattvas—Vidya, Shakti, Swasthya and Netritva—the foundation works across education, women’s autonomy, community well-being, and youth leadership development. Through grassroots initiatives, institutional collaborations, and capacity-building programs, AIKYA strives to cultivate informed citizens, resilient communities, and responsible young leaders.
