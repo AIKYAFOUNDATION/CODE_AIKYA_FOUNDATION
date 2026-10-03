@@ -20,8 +20,28 @@ export const governingBody = [
     image: "/images/team/IMGSKS.jpeg",
   },
   {
+    name: "Shristi Sharma",
+    designation: "Secretary",
+    image: "/images/team/IMGSS.jpeg",
+  },
+  {
+    name: "Akshat Verma",
+    designation: "Assistant Secretary",
+    image: "/images/team/IMGAV.jpeg",
+  },
+  {
+    name: "Manish Kumar Shaw",
+    designation: "Treasurer",
+    image: "/images/team/IMGMKS.jpeg",
+  },
+  {
     name: "Vishal Sharma",
     designation: "Executive Member",
     image: "/images/team/IMGVS.jpg",
+  },
+  {
+    name: "Chirag Singhal",
+    designation: "Executive Member",
+    image: "/images/team/IMGCS.jpeg",
   },
 ];
